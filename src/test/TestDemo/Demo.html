@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+<script type="text/javascript">
+    window.onload=function () {
+     var pres =document.getElementsByTagName('ul')[0];
+        var list=document.getElementsByTagName('li');
+     for (var i=0;i<list.length;i++){
+         list[i].onclick=function () {
+             pres.removeChild(this);
+         }
+     }
+
+        var pre1 =document.getElementsByTagName('div')[0];
+     var pre =document.getElementsByTagName('td')
+
+        for (var i=0;i<pre.length;i++){
+            pre[i].onclick=function () {
+                pre1.setAttribute().style.backgroundColor="#455"
+            }
+        }
+
+    }
+
+
+    
+</script>
+</head>
+<body>
+
+<div>3</div>
+<div>2</div>
+<div>1</div>
+
+<table border="1" id="ta" bgcolor="aqua">
+    <tr >
+        <td   id="2" >姓名</td>
+        <td  id="3">年龄</td>
+    </tr>
+    <tr >
+        <td  id="4">张三</td>
+        <td  id="5">22</td>
+    </tr>
+</table>
+<ul id="u">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+
+</ul>
+
+
+</body>
+</html>
